@@ -1,0 +1,44 @@
+vue create 文件夹名字；
+配置sass ：
+npm install --save-dev sass node-sass sass-loader
+
+
+安装vuex
+npm install vuex --save
+创建store文件夹，建立两个文件index.js loginUser.js
+在 index.js里面引入loginUsers.js
+
+首页 《  1 2 3 4 5  》 尾页
+
+首页： 创建一个方法，把1传到参数里面，传给父级
+上一页：change方法，把当前页-1，传到参数里面，传给父级
+列表单页12345 ：clikc事件，调用change方法，把当前页传到参数里面，传给父级
+尾页： 
+
+current当前页面  默认第一页
+total ：总数据条数  数据里面传的，或者用length获取
+pageNumber:一页显示的条数   数据里面传的
+
+总页数=总条数/一页显示的条数 （向上取整）
+
+        (c-1)*p
+ 1 （0， 5c*p）
+ 2（5，10）
+ 3 （10,15）
+ 4 （15,20）
+
+登录流程： 未登录： 判断登录状态，未登录点击登录按钮去登录页面输入信息，登录
+                  登录完成：页面显示登录信息，在各个页面都可以看到
+                  退出登录：抹掉登录信息，返回未登录的样子
+
+
+
+
+
+
+
+
+
+
+
+
